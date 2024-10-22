@@ -1,0 +1,28 @@
+{
+    "manifest_version": 3,
+    "name": "Clean History for Specific URLs",
+    "version": "1.0",
+    "permissions": [
+      "browsingData",
+      "history",
+      "storage"
+    ],
+    "background": {
+      "service_worker": "background.js"
+    },
+    "action": {
+      "default_popup": "popup.html",
+      "default_icon": {
+        "16": "icon16.png",
+        "32": "icon32.png",
+        "48": "icon48.png",
+        "128": "icon128.png"
+      }
+    },
+    "host_permissions": [
+      "http://*/*",
+      "https://*/*"
+    ],
+    "options_page": "options.html"
+  }
+  
